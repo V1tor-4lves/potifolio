@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4d4;
+    --cor-hover: #272727;
+    --font-primaria: 'krona one', 'sans-serif';
+    --font-secundaria: 'montserrat','sans-serif';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 1% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 2%;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-terciaria);
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+.apresentacao{
+        padding: 3% 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        gap: 40px;      
+        }
+        .titulo{
+            color: var(--cor-terciaria);
+        }
+        /*Desafio do curso*/
+        .titulo:hover{
+            color: var(--cor-secundaria);
+            text-decoration: underline;
+        }
+        
+
+    .apresentacao__conteudo{
+        width: 50%;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .titulo2:hover{
+        font-size: 120%;
+        text-decoration: underline;    
+    }
+
+    .apresentacao__conteudo__titulo{
+        font-size: 2.06rem;
+        font-family: var(--font-primaria);
+    }
+
+    .apresentacao__conteudo__texto{
+        font-size: 1.5rem;
+        font-family: var(--font-secundaria);
+    }
+
+.minhafoto{
+    width: 40%;
+    box-sizing: content-box;
+}
+
+.apresentacao__links{
+    display: flex; 
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    border: 2px, solid var(--cor-terciaria);
+    width: 20rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight:600;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: var(--font-secundaria);
+}
+
+h2{
+    font-family: krona one;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* (não foi passado no curso) */ 
+    .botao:hover{
+        background-color: #272727;
+        text-decoration: underline ;
+        color: #ffff;
+}
+
+.rodape{
+    background-color: aqua;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+}
+.rodape:hover{
+    background-color: #f6f6f6;
+}
+
+@media( max-width: 700px )
+{
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo{
+        width: 100%;
+    }
+
+    .cabecalho{
+        padding: 6%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+        gap: 20px;
+    }
+}
